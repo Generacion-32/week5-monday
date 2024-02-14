@@ -7,7 +7,7 @@ const testMigrate = async () => {
   try {
     await sequelize.sync({ force: true })
     console.log('DB reset ✅');
-    await createCities()
+    // await createCities()
     process.exit()
   } catch (error) {
     console.error(error);
